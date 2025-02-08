@@ -18,7 +18,8 @@
 		"check": "astro check",
 		"build": "pnpm schema && astro build && pagefind",
 		"preview": "astro preview",
-		"schema": "tsx ./scripts/generate-schemas.ts"
+		"schema": "tsx ./scripts/generate-schemas.ts",
+		"llm": "tsx ./scripts/generate-llm.ts"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
@@ -54,8 +55,10 @@
 	},
 	"devDependencies": {
 		"@clack/prompts": "^0.7.0",
+		"@mdx-js/mdx": "^3.1.0",
 		"@tailwindcss/forms": "^0.5.9",
 		"@tailwindcss/typography": "^0.5.15",
+		"minimatch": "10.0.1",
 		"pagefind": "^1.2.0",
 		"tsx": "^4.19.2",
 		"vite-plugin-pagefind": "^0.2.10",
