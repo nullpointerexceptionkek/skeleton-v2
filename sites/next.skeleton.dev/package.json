@@ -19,7 +19,7 @@
 		"build": "pnpm schema && astro build && pagefind",
 		"preview": "astro preview",
 		"schema": "tsx ./scripts/generate-schemas.ts",
-		"llm": "tsx ./scripts/generate-llm.ts"
+		"llm": "astro run tsx ./scripts/generate-llm.ts"
 	},
 	"dependencies": {
 		"@astrojs/check": "^0.9.4",
